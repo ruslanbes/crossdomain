@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Next lines fix mod_rewrite's trailing slash bug
+RewriteCond %{REQUEST_URI} (.*)
+RewriteRule alice.ruslanbes.com/%1 [R=301,L]
+</IfModule>
