@@ -19,7 +19,7 @@
 </head>
 <body>
 <p>Hi, I'm Eve. I want to get a message from Fred. </p>
-Fred has written his message in JSON too but left it on his domain: <a href="http://fred.ruslanbes.com/jsonp/fred.php">http://fred.ruslanbes.com/jsonp/fred.php</a>. Unlike Douglas, Fred and I are using JSONP.</p>
+Fred has written his message in JSON too but left it on his domain: <a href="https://fred.ruslanbes.com/jsonp/fred.php">https://fred.ruslanbes.com/jsonp/fred.php</a>. Unlike Douglas, Fred and I are using JSONP.</p>
 <button type="button" name="get_freds_message" id="get_freds_message">Get Fred's message</button>
 <div class="bottom">
   <label for="freds_message">Fred:</label><br/>
@@ -29,7 +29,7 @@ Fred has written his message in JSON too but left it on his domain: <a href="htt
 </html>
 <script type="text/javascript">
 $("#get_freds_message").click(function() {
-  $.getJSON("http://fred.ruslanbes.com/jsonp/fred.php?callback=?").done( function(data){
+  $.getJSON("https://fred.ruslanbes.com/jsonp/fred.php?callback=?").done( function(data){
     $('#freds_message').val( data.message_to_eve )  
     // console.log(data.callback) // uncomment if you want to look at the callback
   }).fail( function(data) {

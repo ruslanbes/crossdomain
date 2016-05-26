@@ -22,12 +22,12 @@
 </head>
 <body>
 <p>Hi, I'm Cindy. I want to get a message from Douglas. </p>
-<p>We use iframe for our communication and MessageChannel to deliver a message. <a href="http://cindy.ruslanbes.com/messagechannel/cindy.php">Open me</a> in IE 10+, Chrome or Safari. Let's get the message!</p>
+<p>We use iframe for our communication and MessageChannel to deliver a message. <a href="https://cindy.ruslanbes.com/messagechannel/cindy.php">Open me</a> in IE 10+, Chrome or Safari. Let's get the message!</p>
 <button type="button" name="get_douglass_message" id="get_douglass_message">Establish channel with Douglas</button><br/>
 <div class="bottom">
   <label for="douglass_message">Douglas:</label><br/>
   <input type="text" id="douglass_message" placeholder="No message received" /><br/>
-  <iframe src="http://douglas.ruslanbes.com/messagechannel/douglas.php" id="douglass_iframe"></iframe>
+  <iframe src="https://douglas.ruslanbes.com/messagechannel/douglas.php" id="douglass_iframe"></iframe>
 </div>
 </body>
 </html>
@@ -43,7 +43,7 @@ $("#get_douglass_message").click(function() {
         $("#douglass_message").val(event.data)    
       }
       var w = $("#douglass_iframe").get(0).contentWindow
-      w.postMessage("Hi Douglas", 'http://douglas.ruslanbes.com', [window.myMessageChannel.port2])    
+      w.postMessage("Hi Douglas", 'https://douglas.ruslanbes.com', [window.myMessageChannel.port2])    
       $( '#get_douglass_message' ).text( "Say 'Hi again' to Douglas" )
     } else {
       console.log("Cindy: Sending message through the port")

@@ -18,7 +18,7 @@
 </head>
 <body>
 <p>Hi, I'm Cindy. I want to get a message from Douglas.</p>
-<p>I'm sitting on the domain <strong>cindy</strong>.ruslanbes.com and Douglas is on the domain <strong>douglas</strong>.ruslanbes.com. I will try to do the same what Alice did and get the message from <a href="http://douglas.ruslanbes.com/cors/douglas.php">http://douglas.ruslanbes.com/cors/douglas.php</a></p>
+<p>I'm sitting on the domain <strong>cindy</strong>.ruslanbes.com and Douglas is on the domain <strong>douglas</strong>.ruslanbes.com. I will try to do the same what Alice did and get the message from <a href="https://douglas.ruslanbes.com/cors/douglas.php">https://douglas.ruslanbes.com/cors/douglas.php</a></p>
 <button type="button" name="get_douglass_message" id="get_douglass_message">Get Douglas's message</button><br/>
 <div class="bottom">
   <label for="douglass_message">Doug:</label>
@@ -28,7 +28,7 @@
 </html>
 <script type="text/javascript">
 $("#get_douglass_message").click(function() {
-  $.get("http://douglas.ruslanbes.com/cors/douglas.php").done( function(data){
+  $.get("https://douglas.ruslanbes.com/cors/douglas.php").done( function(data){
     $('#douglass_message').val( $('#message_to_cindy', data).text() )  
   }).fail( function(data) {
     $('#douglass_message').val( "<Failed:Cross-domain request>" )  

@@ -19,7 +19,7 @@
 <body>
 <p>Hi, It's Eve. </p>
 <p>Alright, alright, it's Cindy</p>
-<p>I know that Eve had somehow got the message from Fred, located on <a href="http://fred.ruslanbes.com/cors/fred.php">http://fred.ruslanbes.com/cors/fred.php</a>. I want to get it too</p>
+<p>I know that Eve had somehow got the message from Fred, located on <a href="https://fred.ruslanbes.com/cors/fred.php">https://fred.ruslanbes.com/cors/fred.php</a>. I want to get it too</p>
 <button type="button" name="get_freds_message" id="get_freds_message">Get Fred's message</button><br/>
 <div class="bottom"><label for="freds_message">Fred:</label>
 <input type="text" id="freds_message" placeholder="No message received"/></div>
@@ -27,7 +27,7 @@
 </html>
 <script type="text/javascript">
 $("#get_freds_message").click(function() {
-  $.get("http://fred.ruslanbes.com/cors/fred.php").done( function(data){
+  $.get("https://fred.ruslanbes.com/cors/fred.php").done( function(data){
     $('#freds_message').val( $('#message_to_eve', data).text() )  
   }).fail( function(data) {
     $('#freds_message').val( "<Failed:Cross-domain request>" )  

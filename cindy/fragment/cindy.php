@@ -22,18 +22,18 @@
 </head>
 <body>
 <p>Hi, I'm Cindy. I want to get a message from Douglas. </p>
-<p>Douglas is on <a href="http://douglas.ruslanbes.com/fragment/douglas.php">http://douglas.ruslanbes.com/fragment/douglas.php</a>. Let's get the message using the hash technique</p>
+<p>Douglas is on <a href="https://douglas.ruslanbes.com/fragment/douglas.php">https://douglas.ruslanbes.com/fragment/douglas.php</a>. Let's get the message using the hash technique</p>
 <button type="button" name="get_douglass_message" id="get_douglass_message">Get Douglas's message</button><br/>
 <div class="bottom">
   <label for="douglass_message">Douglas:</label><br/>
   <input type="text" id="douglass_message" placeholder="No message received" />
-  <iframe src="http://douglas.ruslanbes.com/fragment/douglas.php" id="douglass_iframe"></iframe>
+  <iframe src="https://douglas.ruslanbes.com/fragment/douglas.php" id="douglass_iframe"></iframe>
 </div>
 </body>
 </html>
 <script type="text/javascript">
 $("#get_douglass_message").click(function() {
-  $("#douglass_iframe").get(0).contentWindow.location = "http://douglas.ruslanbes.com/fragment/douglas.php" + "#Hi, Douglas. Do you have a message for me?"
+  $("#douglass_iframe").get(0).contentWindow.location = "https://douglas.ruslanbes.com/fragment/douglas.php" + "#Hi, Douglas. Do you have a message for me?"
     
   window.addEventListener("hashchange", getMessageFromDouglas, false)
   function getMessageFromDouglas() {

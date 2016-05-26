@@ -15,7 +15,7 @@
 </head>
 <body>
 <p>Hi, I'm Cindy. I want to get a message from Douglas.</p>
-I will try to get the message from <a href="http://douglas.ruslanbes.com/cors/douglas.php">http://douglas.ruslanbes.com/cors/douglas.php</a> but this time I will use a proxy http://cindy.ruslanbes.com/proxy/proxytodouglas.php</p>
+I will try to get the message from <a href="https://douglas.ruslanbes.com/cors/douglas.php">https://douglas.ruslanbes.com/cors/douglas.php</a> but this time I will use a proxy https://cindy.ruslanbes.com/proxy/proxytodouglas.php</p>
 <button type="button" name="get_douglass_message" id="get_douglass_message">Get Douglas's message</button><br/>
 <label for="douglass_message">Douglas:</label>
 <input type="text" id="douglass_message" placeholder="No message received"/><br/>
@@ -23,7 +23,7 @@ I will try to get the message from <a href="http://douglas.ruslanbes.com/cors/do
 </html>
 <script type="text/javascript">
 $("#get_douglass_message").click(function() {
-  $.get("http://cindy.ruslanbes.com/proxy/proxytodouglas.php?url="+ encodeURI("http://douglas.ruslanbes.com/cors/douglas.php")).done( function(data){
+  $.get("https://cindy.ruslanbes.com/proxy/proxytodouglas.php?url="+ encodeURI("https://douglas.ruslanbes.com/cors/douglas.php")).done( function(data){
     $('#douglass_message').val( $('#message_to_cindy', data).text() )  
   }).fail( function(data) {
     $('#douglass_message').val( "<Failed:Cross-domain request>" )  

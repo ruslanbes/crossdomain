@@ -23,7 +23,7 @@
 $( window ).on("message", function( event ){
   console.log("Douglas: I got message from someone")
   event = event.originalEvent
-  if (event.origin !== "http://cindy.ruslanbes.com") return;
+  if (event.origin !== "https://cindy.ruslanbes.com") return;
   console.log("Douglas: It's from Cindy, she says: " + event.data)
   console.log("Douglas: Attaching message handler to port from Cindy")
   var portToCindy = event.ports[0];

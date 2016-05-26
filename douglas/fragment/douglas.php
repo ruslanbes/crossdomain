@@ -24,6 +24,6 @@ window.addEventListener("hashchange", getMessageFromCindy, false)
 function getMessageFromCindy() {
   var hash = window.location.hash.replace(/^#/,'')
   console.log("Cindy says:" + hash)
-  parent.location = "http://cindy.ruslanbes.com/fragment/cindy.php" + "#" + $("#message_to_cindy").text()
+  parent.location = "https://cindy.ruslanbes.com/fragment/cindy.php" + "#" + $("#message_to_cindy").text()
 }
 </script>

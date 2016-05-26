@@ -1,5 +1,5 @@
 <?php
-  header('Access-Control-Allow-Origin: http://eve.ruslanbes.com');
+  header('Access-Control-Allow-Origin: https://eve.ruslanbes.com');
 ?>
 <!DOCTYPE html> <html>
 <head>
@@ -22,7 +22,7 @@
 </head>
 <body>
 <p>Hi, I'm Fred. I have a message to Eve.</p>
-<p>Unlike <a href="http://douglas.ruslanbes.com/cors/douglas.php">Douglas</a> I also send a header <span class="code">Access-Control-Allow-Origin: http://eve.ruslanbes.com</span> .</p>
+<p>Unlike <a href="https://douglas.ruslanbes.com/cors/douglas.php">Douglas</a> I also send a header <span class="code">Access-Control-Allow-Origin: https://eve.ruslanbes.com</span> .</p>
 <p>My message is: <span id="message_to_eve">Eve, you are beautiful</span></p>
 </body>
 </html>

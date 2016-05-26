@@ -23,10 +23,10 @@
 $(window).on("message", function( event ){
   console.log("Fred: I got message from someone")
   event = event.originalEvent
-  if (event.origin !== "http://eve.ruslanbes.com") return;
+  if (event.origin !== "https://eve.ruslanbes.com") return;
   console.log("Fred: It's from Eve, she asks me about a lunch")
   console.log("Fred: Sending message to Eve")
-  parent.postMessage( $("#message_to_eve").text(), "http://eve.ruslanbes.com" );
+  parent.postMessage( $("#message_to_eve").text(), "https://eve.ruslanbes.com" );
 })
 
 </script>

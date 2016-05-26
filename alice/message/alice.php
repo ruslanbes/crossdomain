@@ -23,12 +23,12 @@
 </head>
 <body>
 <p>Hi, I'm Alice. I want to get a message from Bob. </p>
-<p>This time we use iframe for our communication: <a href="http://alice.ruslanbes.com/message/bob.php">http://alice.ruslanbes.com/message/bob.php</a>. Let's get the message!</p>
+<p>This time we use iframe for our communication: <a href="https://alice.ruslanbes.com/message/bob.php">https://alice.ruslanbes.com/message/bob.php</a>. Let's get the message!</p>
 <button type="button" name="get_bobs_message" id="get_bobs_message">Get Bob's message</button><br/>
 <div class="bottom">
   <label for="bobs_message">Bob:</label><br/>
   <input type="text" id="bobs_message" placeholder="No message received"/><br/>
-  <iframe src="http://alice.ruslanbes.com/message/bob.php" id="bobs_iframe"></iframe>
+  <iframe src="https://alice.ruslanbes.com/message/bob.php" id="bobs_iframe"></iframe>
 </div>
 </body>
 </html>

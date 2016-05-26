@@ -19,7 +19,7 @@
 </head>
 <body>
 <p>Hi, I'm Alice. I want to get a message from Bob. </p>
-This time Bob has written his message in JSON and left it on my domain: <a href="http://alice.ruslanbes.com/jsonp/bob.php">http://alice.ruslanbes.com/jsonp/bob.php</a>. Let's get it!</p>
+This time Bob has written his message in JSON and left it on my domain: <a href="https://alice.ruslanbes.com/jsonp/bob.php">https://alice.ruslanbes.com/jsonp/bob.php</a>. Let's get it!</p>
 <button type="button" name="get_bobs_message" id="get_bobs_message">Get Bob's message</button><br/>
 <div class="bottom">
   <label for="bobs_message">Bob:</label><br/>
@@ -29,7 +29,7 @@ This time Bob has written his message in JSON and left it on my domain: <a href=
 </html>
 <script type="text/javascript">
 $("#get_bobs_message").click(function() {
-  $.getJSON("http://alice.ruslanbes.com/jsonp/bob.php").done( function(data){
+  $.getJSON("https://alice.ruslanbes.com/jsonp/bob.php").done( function(data){
     $('#bobs_message').val( data.message_to_alice )  
   }).fail( function(data) {
     $('#bobs_message').val( "<Failed:Cross-domain request>" )  
